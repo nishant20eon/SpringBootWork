@@ -1,0 +1,363 @@
+2024-09-26 21:30:41 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:30:41 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:30:41 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-26 21:30:41 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-26 21:30:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:30:42 - Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:30:42 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:30:42 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:30:42 - Starting service [Tomcat]
+2024-09-26 21:30:42 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:30:42 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:30:42 - Root WebApplicationContext: initialization completed in 1452 ms
+2024-09-26 21:30:42 - HikariPool-1 - Starting...
+2024-09-26 21:30:43 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@233f3b72
+2024-09-26 21:30:43 - HikariPool-1 - Start completed.
+2024-09-26 21:30:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:30:43 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-26 21:30:43 - HHH000026: Second-level cache disabled
+2024-09-26 21:30:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:30:43 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:30:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:30:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:30:44 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-26 21:30:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:30:45 - LiveReload server is running on port 35729
+2024-09-26 21:30:45 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:30:45 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:30:45 - Started FlightReservationApplication in 5.11 seconds (process running for 6.115)
+2024-09-26 21:31:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26 21:31:07 - Initializing Servlet 'dispatcherServlet'
+2024-09-26 21:31:07 - Completed initialization in 1 ms
+2024-09-26 21:31:12 - Inside findFlight() from: AUS to: NYC departureDate: Mon Feb 05 00:00:00 IST 2018
+2024-09-26 21:31:12 - Flight List [Flight [id=1, flightNumber=AA1, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 03:14:07.0], Flight [id=2, flightNumber=AA2, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [id=3, flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [id=4, flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2024-09-26 21:31:14 - showCompleteReservation() invoked with flight id: 4
+2024-09-26 21:31:14 - showCompleteReservation() flight deatils: Flight [id=4, flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]
+2024-09-26 21:31:44 - bookFlight: ReservationRequest [flightId=4, passengerFirstName=Nurit, passengerLastName=Hadul, passengerEmail=eon20nishant@gmail.com, passengerPhone=8109650083, nameOnTheCard=, cardNumber=, expirationDate=, securityCode=]
+2024-09-26 21:31:44 - bookFlight: flightFlight [id=4, flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]
+2024-09-26 21:31:44 - bookFlight: savedPassengerPassenger [firstName=Nurit, lastName=Hadul, middleName=null, email=eon20nishant@gmail.com, phone=8109650083]
+2024-09-26 21:31:44 - bookFlight: ReservationReservation [checkedIn=false, numberOfBags=0, passenger=Passenger [firstName=Nurit, lastName=Hadul, middleName=null, email=eon20nishant@gmail.com, phone=8109650083], flight=Flight [id=4, flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2024-09-26 21:31:44 - bookFlight: filePathG:\PDF11.pdf
+2024-09-26 21:31:44 - Table:  com.itextpdf.text.pdf.PdfPTable@77be08e8
+2024-09-26 21:31:44 - toAddress: eon20nishant@gmail.com fliePath: G:\PDF11.pdf
+2024-09-26 21:31:52 - completeReservation() reservation deatils: Reservation [checkedIn=false, numberOfBags=0, passenger=Passenger [firstName=Nurit, lastName=Hadul, middleName=null, email=eon20nishant@gmail.com, phone=8109650083], flight=Flight [id=4, flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2024-09-26 21:42:08 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-09-26 21:42:08 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:42:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:42:08 - HikariPool-1 - Shutdown initiated...
+2024-09-26 21:42:08 - HikariPool-1 - Shutdown completed.
+2024-09-26 21:42:08 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:42:08 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:42:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:42:08 - Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:42:08 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:42:08 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:42:08 - Starting service [Tomcat]
+2024-09-26 21:42:08 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:42:08 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:42:08 - Root WebApplicationContext: initialization completed in 416 ms
+2024-09-26 21:42:08 - HikariPool-2 - Starting...
+2024-09-26 21:42:09 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cadcea0
+2024-09-26 21:42:09 - HikariPool-2 - Start completed.
+2024-09-26 21:42:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:42:09 - HHH000026: Second-level cache disabled
+2024-09-26 21:42:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:42:09 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:42:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:42:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:42:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:42:09 - LiveReload server is running on port 35729
+2024-09-26 21:42:09 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:42:09 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:42:09 - Started FlightReservationApplication in 1.097 seconds (process running for 689.714)
+2024-09-26 21:42:09 - Condition evaluation unchanged
+2024-09-26 21:44:17 - Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-09-26 21:44:17 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:44:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:44:17 - HikariPool-2 - Shutdown initiated...
+2024-09-26 21:44:17 - HikariPool-2 - Shutdown completed.
+2024-09-26 21:44:17 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:44:17 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:44:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:44:18 - Finished Spring Data repository scanning in 36 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:44:19 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:44:19 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:44:19 - Starting service [Tomcat]
+2024-09-26 21:44:19 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:44:19 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:44:19 - Root WebApplicationContext: initialization completed in 1512 ms
+2024-09-26 21:44:19 - HikariPool-3 - Starting...
+2024-09-26 21:44:19 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fc4299
+2024-09-26 21:44:19 - HikariPool-3 - Start completed.
+2024-09-26 21:44:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:44:19 - HHH000026: Second-level cache disabled
+2024-09-26 21:44:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:44:19 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:44:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:44:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:44:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:44:19 - LiveReload server is running on port 35729
+2024-09-26 21:44:19 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:44:19 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:44:19 - Started FlightReservationApplication in 2.111 seconds (process running for 819.778)
+2024-09-26 21:44:19 - Condition evaluation unchanged
+2024-09-26 21:49:27 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-09-26 21:49:27 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:49:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:49:27 - HikariPool-3 - Shutdown initiated...
+2024-09-26 21:49:27 - HikariPool-3 - Shutdown completed.
+2024-09-26 21:49:27 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:49:27 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:49:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:49:27 - Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:49:27 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:49:27 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:49:27 - Starting service [Tomcat]
+2024-09-26 21:49:27 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:49:27 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:49:27 - Root WebApplicationContext: initialization completed in 329 ms
+2024-09-26 21:49:27 - HikariPool-4 - Starting...
+2024-09-26 21:49:27 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69a62369
+2024-09-26 21:49:27 - HikariPool-4 - Start completed.
+2024-09-26 21:49:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:49:27 - HHH000026: Second-level cache disabled
+2024-09-26 21:49:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:49:27 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:49:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:49:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:49:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:49:27 - LiveReload server is running on port 35729
+2024-09-26 21:49:27 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:49:27 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:49:27 - Started FlightReservationApplication in 0.716 seconds (process running for 1128.03)
+2024-09-26 21:49:27 - Condition evaluation unchanged
+2024-09-26 21:50:01 - Restarting due to 30 class path changes (0 additions, 26 deletions, 4 modifications)
+2024-09-26 21:50:01 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:50:01 - HikariPool-4 - Shutdown initiated...
+2024-09-26 21:50:01 - HikariPool-4 - Shutdown completed.
+2024-09-26 21:50:01 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:50:01 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:50:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:50:01 - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-09-26 21:50:01 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:50:01 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:01 - Starting service [Tomcat]
+2024-09-26 21:50:01 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:50:01 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:50:01 - Root WebApplicationContext: initialization completed in 247 ms
+2024-09-26 21:50:01 - HikariPool-5 - Starting...
+2024-09-26 21:50:01 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7439a3ed
+2024-09-26 21:50:01 - HikariPool-5 - Start completed.
+2024-09-26 21:50:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:50:01 - HHH000026: Second-level cache disabled
+2024-09-26 21:50:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:50:01 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:50:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:50:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:50:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:50:01 - LiveReload server is running on port 35729
+2024-09-26 21:50:01 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:01 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:50:01 - Started FlightReservationApplication in 0.537 seconds (process running for 1161.861)
+2024-09-26 21:50:01 - Condition evaluation unchanged
+2024-09-26 21:50:18 - Restarting due to 26 class path changes (26 additions, 0 deletions, 0 modifications)
+2024-09-26 21:50:18 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:50:18 - HikariPool-5 - Shutdown initiated...
+2024-09-26 21:50:18 - HikariPool-5 - Shutdown completed.
+2024-09-26 21:50:18 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:50:18 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:50:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:50:18 - Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:50:18 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:50:18 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:18 - Starting service [Tomcat]
+2024-09-26 21:50:18 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:50:18 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:50:18 - Root WebApplicationContext: initialization completed in 402 ms
+2024-09-26 21:50:19 - HikariPool-6 - Starting...
+2024-09-26 21:50:19 - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@251477b7
+2024-09-26 21:50:19 - HikariPool-6 - Start completed.
+2024-09-26 21:50:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:50:19 - HHH000026: Second-level cache disabled
+2024-09-26 21:50:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:50:19 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:50:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:50:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:50:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:50:19 - LiveReload server is running on port 35729
+2024-09-26 21:50:19 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:19 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:50:19 - Started FlightReservationApplication in 0.939 seconds (process running for 1179.598)
+2024-09-26 21:50:19 - Condition evaluation unchanged
+2024-09-26 21:50:22 - Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-09-26 21:50:22 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:50:22 - HikariPool-6 - Shutdown initiated...
+2024-09-26 21:50:22 - HikariPool-6 - Shutdown completed.
+2024-09-26 21:50:22 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:50:22 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:50:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:50:23 - Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:50:23 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:50:23 - Initializing ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:23 - Starting service [Tomcat]
+2024-09-26 21:50:23 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:50:23 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:50:23 - Root WebApplicationContext: initialization completed in 264 ms
+2024-09-26 21:50:23 - HikariPool-7 - Starting...
+2024-09-26 21:50:23 - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2620254a
+2024-09-26 21:50:23 - HikariPool-7 - Start completed.
+2024-09-26 21:50:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:50:23 - HHH000026: Second-level cache disabled
+2024-09-26 21:50:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:50:23 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:50:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:50:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:50:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:50:23 - LiveReload server is running on port 35729
+2024-09-26 21:50:23 - Starting ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:50:23 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:50:23 - Started FlightReservationApplication in 0.61 seconds (process running for 1183.737)
+2024-09-26 21:50:23 - Condition evaluation unchanged
+2024-09-26 21:55:23 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-09-26 21:55:23 - Stopping ProtocolHandler ["http-nio-7886"]
+2024-09-26 21:55:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:55:23 - HikariPool-7 - Shutdown initiated...
+2024-09-26 21:55:23 - HikariPool-7 - Shutdown completed.
+2024-09-26 21:55:26 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:55:26 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:55:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:55:26 - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:55:26 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:55:26 - Starting service [Tomcat]
+2024-09-26 21:55:26 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:55:26 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:55:26 - Root WebApplicationContext: initialization completed in 265 ms
+2024-09-26 21:55:26 - HikariPool-8 - Starting...
+2024-09-26 21:55:26 - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32b622b9
+2024-09-26 21:55:26 - HikariPool-8 - Start completed.
+2024-09-26 21:55:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:55:26 - HHH000026: Second-level cache disabled
+2024-09-26 21:55:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:55:26 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:55:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:55:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:55:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:55:26 - LiveReload server is running on port 35729
+2024-09-26 21:55:26 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:55:26 - Started FlightReservationApplication in 0.644 seconds (process running for 1487.16)
+2024-09-26 21:55:26 - Condition evaluation unchanged
+2024-09-26 21:56:15 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-26 21:56:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:56:15 - HikariPool-8 - Shutdown initiated...
+2024-09-26 21:56:15 - HikariPool-8 - Shutdown completed.
+2024-09-26 21:57:07 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:57:07 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:57:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:57:07 - Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:57:07 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:57:07 - Starting service [Tomcat]
+2024-09-26 21:57:07 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:57:07 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:57:07 - Root WebApplicationContext: initialization completed in 272 ms
+2024-09-26 21:57:07 - HikariPool-9 - Starting...
+2024-09-26 21:57:08 - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@263ee1e0
+2024-09-26 21:57:08 - HikariPool-9 - Start completed.
+2024-09-26 21:57:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:57:08 - HHH000026: Second-level cache disabled
+2024-09-26 21:57:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:57:08 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:57:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:57:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:57:08 - LiveReload server is running on port 35729
+2024-09-26 21:57:08 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:57:08 - Started FlightReservationApplication in 0.65 seconds (process running for 1588.454)
+2024-09-26 21:57:08 - Condition evaluation unchanged
+2024-09-26 21:57:24 - Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-09-26 21:57:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:24 - HikariPool-9 - Shutdown initiated...
+2024-09-26 21:57:24 - HikariPool-9 - Shutdown completed.
+2024-09-26 21:57:24 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:57:24 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:57:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:57:24 - Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:57:24 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:57:24 - Starting service [Tomcat]
+2024-09-26 21:57:24 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:57:24 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:57:24 - Root WebApplicationContext: initialization completed in 288 ms
+2024-09-26 21:57:24 - HikariPool-10 - Starting...
+2024-09-26 21:57:24 - HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b00a2e7
+2024-09-26 21:57:24 - HikariPool-10 - Start completed.
+2024-09-26 21:57:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:57:24 - HHH000026: Second-level cache disabled
+2024-09-26 21:57:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:57:24 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:57:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:57:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:57:25 - LiveReload server is running on port 35729
+2024-09-26 21:57:25 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:57:25 - Started FlightReservationApplication in 0.613 seconds (process running for 1605.368)
+2024-09-26 21:57:25 - Condition evaluation unchanged
+2024-09-26 21:57:36 - Restarting due to 26 class path changes (0 additions, 0 deletions, 26 modifications)
+2024-09-26 21:57:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:36 - HikariPool-10 - Shutdown initiated...
+2024-09-26 21:57:36 - HikariPool-10 - Shutdown completed.
+2024-09-26 21:57:36 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:57:36 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:57:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:57:37 - Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:57:37 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:57:37 - Starting service [Tomcat]
+2024-09-26 21:57:37 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:57:37 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:57:37 - Root WebApplicationContext: initialization completed in 432 ms
+2024-09-26 21:57:37 - HikariPool-11 - Starting...
+2024-09-26 21:57:37 - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c645619
+2024-09-26 21:57:37 - HikariPool-11 - Start completed.
+2024-09-26 21:57:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:57:37 - HHH000026: Second-level cache disabled
+2024-09-26 21:57:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:57:37 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:57:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:57:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:57:37 - LiveReload server is running on port 35729
+2024-09-26 21:57:37 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:57:37 - Started FlightReservationApplication in 0.841 seconds (process running for 1617.915)
+2024-09-26 21:57:37 - Condition evaluation unchanged
+2024-09-26 21:57:40 - Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-09-26 21:57:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:40 - HikariPool-11 - Shutdown initiated...
+2024-09-26 21:57:40 - HikariPool-11 - Shutdown completed.
+2024-09-26 21:57:40 - Starting FlightReservationApplication using Java 22.0.2 with PID 15612 (G:\Workspace\Project\flightReservation\target\classes started by Nishant in G:\Workspace\Project\flightReservation)
+2024-09-26 21:57:40 - No active profile set, falling back to 1 default profile: "default"
+2024-09-26 21:57:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26 21:57:40 - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-09-26 21:57:40 - Tomcat initialized with port 7886 (http)
+2024-09-26 21:57:40 - Starting service [Tomcat]
+2024-09-26 21:57:40 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26 21:57:40 - Initializing Spring embedded WebApplicationContext
+2024-09-26 21:57:40 - Root WebApplicationContext: initialization completed in 256 ms
+2024-09-26 21:57:41 - HikariPool-12 - Starting...
+2024-09-26 21:57:41 - HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ac1a1e3
+2024-09-26 21:57:41 - HikariPool-12 - Start completed.
+2024-09-26 21:57:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26 21:57:41 - HHH000026: Second-level cache disabled
+2024-09-26 21:57:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26 21:57:41 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-26 21:57:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26 21:57:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26 21:57:41 - LiveReload server is running on port 35729
+2024-09-26 21:57:41 - Tomcat started on port 7886 (http) with context path '/flightreservation'
+2024-09-26 21:57:41 - Started FlightReservationApplication in 0.583 seconds (process running for 1621.463)
+2024-09-26 21:57:41 - Condition evaluation unchanged
+2024-09-26 21:57:47 - Application shutdown requested.
+2024-09-26 21:57:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26 21:57:47 - HikariPool-12 - Shutdown initiated...
+2024-09-26 21:57:47 - HikariPool-12 - Shutdown completed.
