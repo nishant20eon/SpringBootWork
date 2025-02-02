@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Job Emails</title>
+    <script>
+        function previewFile() {
+            const preview = document.getElementById('filePreview');
+            const fileInput = document.getElementById('file');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML = `<p>File selected: ${file.name}</p>`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = "<p>No file selected</p>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Send Job Application Emails</h2>
+
+    <form action="/email/send" method="post" enctype="multipart/form-data">
+        <label for="recipients">Enter HR Emails (comma-separated):</label><br>
+        <input type="text" id="recipients" name="recipients" required style="width: 300px;"><br><br>
+
+        <label for="hrNames">Enter HR Names (comma-separated, in same order as emails):</label><br>
+        <input type="text" id="hrNames" name="hrNames" required style="width: 300px;"><br><br>
+
+        <label for="file">Upload Resume (PDF/DOCX):</label><br>
+        <input type="file" id="file" name="file" accept=".pdf,.docx" required onchange="previewFile()"><br><br>
+
+        <div id="filePreview" style="color:blue;"></div>
+
+        <button type="submit">Send Emails</button>
+    </form>
+
+    <p style="color:green;">${message}</p>
+</body>
+</html>
